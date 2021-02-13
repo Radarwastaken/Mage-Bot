@@ -1,6 +1,6 @@
-# Mage
+# MEE69
 
-An Open Source discord bot fulfil my needs.
+MEE6, but better
 [Help regarding this can be asked here](https://dsc.gg/dhruvin)
 
 # Documentation
@@ -12,7 +12,7 @@ An Open Source discord bot fulfil my needs.
         -   [Requirements](#requirements)
         -   [Running the bot](#running-the-bot)
     -   [Changing Files](#creating-and-changing-files)
-    -   [Getting API Keys](#getting-api-keys)
+    -   [Getting API Keys and Other requirments](#getting-api-keys-and-other-requirements)
 -   [Usage](#usage)
 -   [Contributors](#contributors)
 
@@ -39,7 +39,7 @@ Hosting on heroku is very easy. All you have to do is fork this repository, make
 -   BS_API_KEY => your brawl stars api key [see this](#getting-api-keys)
 -   COC_API_KEY => your clash of clasn api key [see this](#getting-api-keys)
 -   CR_API_KEY => your clash royale api key [see this](#getting-api-keys)
--   STARLIST_KEY => your starlist api key (optional as private api)
+-   STARLIST_KEY => your starlist (now name changed to brawlify) api key (optional as private api)
 -   GITHUB_API_KEY => your github api key [see this](#getting-api-keys)
 
 5. Change the dyno worker thing to worker (it is web by default)
@@ -85,7 +85,7 @@ Changing Files
 
     **Note:** Do not have any of the env variables (process.env[varaible]) that are shown in [config.ts](Bot/Data/config.ts) or just have them correct as it is how the bot works. (On your host you should have those and are expected to put them not on native pc)
 
-### Getting API Keys
+### Getting API Keys and Other requirements
 
 Supercell:
 
@@ -93,11 +93,24 @@ Supercell:
 2. [Clash Royale](https://developer.clashroyale.com/ 'Official Royale API')
 3. [Clash of Clans](https://developer.clashofclans.com/ 'Official Clash of Clans API')
 
-**Note:** I have used The [Royale API proxy](https://docs.royaleapi.com/#/proxy) and hence you would want to add `128.128.128.128` as an whitelisted IP Address in the above keys in order for this to function properly.
+**Note:** I have used The [Royale API proxy](https://docs.royaleapi.com/#/proxy) and hence you will have to add `128.128.128.128` as an whitelisted IP Address in the above keys in order for this to function properly.
 
 GitHub:
 
 -   [GitHub API Key](https://developer.github.com)
+
+Lavalink:
+
+This needs you to either host a lavalink server or use an exisiting server.
+
+-   [Lavalink](https://google.com/search?q=Lavalink)
+
+Spotify:
+
+This is needed for searching Spotify music tracks and adding them to queue.
+This is an optional requirement.
+
+-   [Spotify](https://developer.spotify.com/dashboard)
 
 ## Usage
 
